@@ -1,0 +1,102 @@
+/* Navbar base styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background: linear-gradient(90deg, #264653, #2a9d8f);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo styling */
+.logo {
+  color: #f4a261;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Desktop menu */
+.navbar-right {
+  display: flex;
+  gap: 28px;
+}
+
+.navbar-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.navbar-right a:hover {
+  color: #e9c46a;
+}
+
+.navbar-right a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #e9c46a;
+  transition: width 0.3s;
+}
+
+.navbar-right a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger menu (mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-right {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #2a9d8f;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+    align-items: center;
+  }
+
+  .navbar-right.active {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 14px 20px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+}

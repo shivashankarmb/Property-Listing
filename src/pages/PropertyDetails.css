@@ -1,0 +1,108 @@
+.property-details-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.property-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.property-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.details-content {
+  padding: 20px;
+}
+
+.location {
+  font-weight: 500;
+  margin: 10px 0;
+  color: #444;
+}
+
+.desc {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal-content.small {
+  width: 320px;
+}
+
+.modal.dark .modal-content {
+  background: #f0f0f0;
+}
+
+.agent-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

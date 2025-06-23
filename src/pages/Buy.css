@@ -1,0 +1,31 @@
+.buy-container {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.buy-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #264653;
+}
+
+.filter-section {
+  margin-bottom: 25px;
+}
+
+.filter-section input {
+  padding: 10px 16px;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
